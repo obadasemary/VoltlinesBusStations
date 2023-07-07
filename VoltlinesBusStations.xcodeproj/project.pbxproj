@@ -17,6 +17,7 @@
 		AF3EDFE72A56F47A00474AB0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFE62A56F47A00474AB0 /* Coordinator.swift */; };
 		AF3EDFF02A56F5A900474AB0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */; };
 		AF3EDFF12A56F5A900474AB0 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */; };
+		AF3EDFF72A5861B800474AB0 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFF62A5861B700474AB0 /* CoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AF3EDFE62A56F47A00474AB0 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		AF3EDFF62A5861B700474AB0 /* CoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		AF3EDFCB2A56EF1D00474AB0 /* VoltlinesBusStationsTests */ = {
 			isa = PBXGroup;
 			children = (
+				AF3EDFF52A5861B700474AB0 /* Coordinator Tests */,
 				AF3EDFCC2A56EF1D00474AB0 /* VoltlinesBusStationsTests.swift */,
 			);
 			path = VoltlinesBusStationsTests;
@@ -168,6 +171,14 @@
 				AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		AF3EDFF52A5861B700474AB0 /* Coordinator Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EDFF62A5861B700474AB0 /* CoordinatorTests.swift */,
+			);
+			path = "Coordinator Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF3EDFF72A5861B800474AB0 /* CoordinatorTests.swift in Sources */,
 				AF3EDFCD2A56EF1D00474AB0 /* VoltlinesBusStationsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
