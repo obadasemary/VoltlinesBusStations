@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		AF3EDFB62A56EF1700474AB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFB52A56EF1700474AB0 /* AppDelegate.swift */; };
 		AF3EDFB82A56EF1700474AB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFB72A56EF1700474AB0 /* SceneDelegate.swift */; };
-		AF3EDFBA2A56EF1700474AB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFB92A56EF1700474AB0 /* ViewController.swift */; };
-		AF3EDFBD2A56EF1700474AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3EDFBB2A56EF1700474AB0 /* Main.storyboard */; };
 		AF3EDFBF2A56EF1C00474AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF3EDFBE2A56EF1C00474AB0 /* Assets.xcassets */; };
 		AF3EDFC22A56EF1C00474AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF3EDFC02A56EF1C00474AB0 /* LaunchScreen.storyboard */; };
 		AF3EDFCD2A56EF1D00474AB0 /* VoltlinesBusStationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFCC2A56EF1D00474AB0 /* VoltlinesBusStationsTests.swift */; };
 		AF3EDFD72A56EF1D00474AB0 /* VoltlinesBusStationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFD62A56EF1D00474AB0 /* VoltlinesBusStationsUITests.swift */; };
 		AF3EDFD92A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFD82A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift */; };
+		AF3EDFE72A56F47A00474AB0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFE62A56F47A00474AB0 /* Coordinator.swift */; };
+		AF3EDFF02A56F5A900474AB0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */; };
+		AF3EDFF12A56F5A900474AB0 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		AF3EDFB22A56EF1700474AB0 /* VoltlinesBusStations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoltlinesBusStations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3EDFB52A56EF1700474AB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF3EDFB72A56EF1700474AB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AF3EDFB92A56EF1700474AB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AF3EDFBC2A56EF1700474AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF3EDFBE2A56EF1C00474AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF3EDFC12A56EF1C00474AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF3EDFC32A56EF1C00474AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		AF3EDFD22A56EF1D00474AB0 /* VoltlinesBusStationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltlinesBusStationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3EDFD62A56EF1D00474AB0 /* VoltlinesBusStationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltlinesBusStationsUITests.swift; sourceTree = "<group>"; };
 		AF3EDFD82A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltlinesBusStationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF3EDFE62A56F47A00474AB0 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,10 @@
 		AF3EDFB42A56EF1700474AB0 /* VoltlinesBusStations */ = {
 			isa = PBXGroup;
 			children = (
-				AF3EDFB52A56EF1700474AB0 /* AppDelegate.swift */,
-				AF3EDFB72A56EF1700474AB0 /* SceneDelegate.swift */,
-				AF3EDFB92A56EF1700474AB0 /* ViewController.swift */,
-				AF3EDFBB2A56EF1700474AB0 /* Main.storyboard */,
-				AF3EDFBE2A56EF1C00474AB0 /* Assets.xcassets */,
-				AF3EDFC02A56EF1C00474AB0 /* LaunchScreen.storyboard */,
+				AF3EDFE82A56F49000474AB0 /* App Delegate */,
+				AF3EDFE52A56F46300474AB0 /* App Coordinatior */,
+				AF3EDFEA2A56F55F00474AB0 /* Scenes */,
+				AF3EDFE92A56F52000474AB0 /* Resources */,
 				AF3EDFC32A56EF1C00474AB0 /* Info.plist */,
 			);
 			path = VoltlinesBusStations;
@@ -125,6 +125,49 @@
 				AF3EDFD82A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift */,
 			);
 			path = VoltlinesBusStationsUITests;
+			sourceTree = "<group>";
+		};
+		AF3EDFE52A56F46300474AB0 /* App Coordinatior */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EDFE62A56F47A00474AB0 /* Coordinator.swift */,
+			);
+			path = "App Coordinatior";
+			sourceTree = "<group>";
+		};
+		AF3EDFE82A56F49000474AB0 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EDFB52A56EF1700474AB0 /* AppDelegate.swift */,
+				AF3EDFB72A56EF1700474AB0 /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		AF3EDFE92A56F52000474AB0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EDFBE2A56EF1C00474AB0 /* Assets.xcassets */,
+				AF3EDFC02A56EF1C00474AB0 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF3EDFEA2A56F55F00474AB0 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EDFED2A56F58B00474AB0 /* Map */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AF3EDFED2A56F58B00474AB0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */,
+				AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF3EDFC22A56EF1C00474AB0 /* LaunchScreen.storyboard in Resources */,
+				AF3EDFF12A56F5A900474AB0 /* MapViewController.xib in Resources */,
 				AF3EDFBF2A56EF1C00474AB0 /* Assets.xcassets in Resources */,
-				AF3EDFBD2A56EF1700474AB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3EDFBA2A56EF1700474AB0 /* ViewController.swift in Sources */,
+				AF3EDFE72A56F47A00474AB0 /* Coordinator.swift in Sources */,
 				AF3EDFB62A56EF1700474AB0 /* AppDelegate.swift in Sources */,
 				AF3EDFB82A56EF1700474AB0 /* SceneDelegate.swift in Sources */,
+				AF3EDFF02A56F5A900474AB0 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AF3EDFBB2A56EF1700474AB0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF3EDFBC2A56EF1700474AB0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AF3EDFC02A56EF1C00474AB0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +478,6 @@
 				INFOPLIST_FILE = VoltlinesBusStations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +505,6 @@
 				INFOPLIST_FILE = VoltlinesBusStations/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
