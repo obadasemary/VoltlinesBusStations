@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol StationsServiceable {
+    func getStations() async -> Result<[Station], RequestError>
+}
+
+struct StationsService: HTTPClient, StationsServiceable {
+    func getStations() async -> Result<[Station], RequestError> {
+        return await sendRequest(endpoint: StationsEndpoint.stations, responseModel: [Station].self)
+    }
+}
