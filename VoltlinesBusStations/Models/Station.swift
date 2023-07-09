@@ -19,4 +19,19 @@ struct Station: Codable {
         case id, name, trips
         case tripsCount = "trips_count"
     }
+
+    // Computed Property
+    var lat: Double {
+        guard let coordinates = centerCoordinates?.split(separator: ",") else {
+            return 0
+        }
+        return Double(coordinates[0]) ?? 0
+    }
+
+    var long: Double {
+        guard let coordinates = centerCoordinates?.split(separator: ",") else {
+            return 0
+        }
+        return Double(coordinates[1]) ?? 0
+    }
 }
