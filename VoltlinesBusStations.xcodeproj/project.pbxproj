@@ -83,6 +83,7 @@
 		AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripsViewController.xib; sourceTree = "<group>"; };
 		AFF31A142A5BD2AB00CC64DD /* MapVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVCRouter.swift; sourceTree = "<group>"; };
+		AFF31A162A5BD39B00CC64DD /* TripsVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsVCRouter.swift; sourceTree = "<group>"; };
 		AFF31A182A5BD81700CC64DD /* TripsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

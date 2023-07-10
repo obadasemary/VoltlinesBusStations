@@ -7,11 +7,21 @@
 
 import UIKit
 
-class TripsViewController: UIViewController {
+class TripsViewController: UIViewController, TripsPresenterDelegate {
+
+    func showError(error: String) {
+        print("TripsViewController.Error:", error)
+    }
+
+    func presentStations(station: Station) {
+        print("TripsViewController.station:", station)
+    }
+    
+    var presenter: TripsPresenter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        presenter?.viewDidLoad()
     }
 }
