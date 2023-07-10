@@ -30,7 +30,7 @@ class MapPresenter {
         delegate?.showIndicator()
         fetchStations { [weak self] result in
             guard let self = self else { return }
-            
+
             self.delegate?.hideIndicator()
             switch result {
             case .success(let response):
