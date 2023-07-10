@@ -12,6 +12,7 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var listTripsButton: UIButton!
 
     // MARK: - Init
 
@@ -30,6 +31,7 @@ class MapViewController: UIViewController {
 
         setupLocationManger()
         setupMapUI()
+        setupListTripsButton()
     }
 
     // MARK: Methods
@@ -53,6 +55,16 @@ class MapViewController: UIViewController {
         mapView.mapType = .standard
         mapView.isScrollEnabled = true
         mapView.delegate = self
+    }
+    
+    func setupListTripsButton() {
+        
+        listTripsButton.setTitle("List Trips", for: .normal)
+        listTripsButton.setTitleColor(.white, for: .normal)
+        listTripsButton.backgroundColor = .blue
+        listTripsButton.layer.cornerRadius = 20
+        listTripsButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        listTripsButton.isHidden = true
     }
 
     func setupMap(
@@ -97,5 +109,9 @@ class MapViewController: UIViewController {
         default:
             print("Unkonwn error. Unable to get location.")
         }
+    }
+    
+    @IBAction func didTapListTrips(_ sender: Any) {
+        
     }
 }
