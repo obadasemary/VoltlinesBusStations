@@ -32,6 +32,7 @@
 		AFF31A112A5B8BC600CC64DD /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */; };
 		AFF31A122A5B8BC600CC64DD /* TripsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */; };
 		AFF31A152A5BD2AB00CC64DD /* MapVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A142A5BD2AB00CC64DD /* MapVCRouter.swift */; };
+		AFF31A172A5BD39B00CC64DD /* TripsVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A162A5BD39B00CC64DD /* TripsVCRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				AF3EDFE82A56F49000474AB0 /* App Delegate */,
+				AFF31A132A5BD28C00CC64DD /* Router */,
 				AF3EDFF82A597B8200474AB0 /* Network */,
 				AF3EDFFD2A597BBF00474AB0 /* Models */,
 				AF3EDFEA2A56F55F00474AB0 /* Scenes */,
@@ -267,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				AFF31A142A5BD2AB00CC64DD /* MapVCRouter.swift */,
+				AFF31A162A5BD39B00CC64DD /* TripsVCRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
