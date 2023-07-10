@@ -16,9 +16,8 @@ class MapViewController: UIViewController {
 
     // MARK: - Init
 
-    weak var coordinator: Coordinator?
     var locationManger: CLLocationManager?
-    var presenter: MapPresenter!
+    var presenter: MapPresenter?
     var annotationView: MKAnnotationView!
 
     // MARK: LifeCycle
@@ -26,8 +25,7 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        presenter = MapPresenter(delegate: self)
-        presenter.viewDidLoad()
+        presenter?.viewDidLoad()
 
         setupLocationManger()
         setupMapUI()
@@ -112,6 +110,7 @@ class MapViewController: UIViewController {
     }
     
     @IBAction func didTapListTrips(_ sender: Any) {
-        
+        guard let station = presenter?.selectedStation else { return }
+        presenter?.navigateToTripList(station: station)
     }
 }
