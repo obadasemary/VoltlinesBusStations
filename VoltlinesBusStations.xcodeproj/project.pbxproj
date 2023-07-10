@@ -31,6 +31,7 @@
 		AFF31A0D2A5B883700CC64DD /* MapVC+MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0C2A5B883700CC64DD /* MapVC+MKMapViewDelegate.swift */; };
 		AFF31A112A5B8BC600CC64DD /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */; };
 		AFF31A122A5B8BC600CC64DD /* TripsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */; };
+		AFF31A152A5BD2AB00CC64DD /* MapVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A142A5BD2AB00CC64DD /* MapVCRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		AFF31A0C2A5B883700CC64DD /* MapVC+MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
 		AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripsViewController.xib; sourceTree = "<group>"; };
+		AFF31A142A5BD2AB00CC64DD /* MapVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVCRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,14 @@
 			path = Trips;
 			sourceTree = "<group>";
 		};
+		AFF31A132A5BD28C00CC64DD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AFF31A142A5BD2AB00CC64DD /* MapVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,6 +439,7 @@
 				AF3EE0032A597BF900474AB0 /* HTTPMethod.swift in Sources */,
 				AFF31A112A5B8BC600CC64DD /* TripsViewController.swift in Sources */,
 				AF3EE0012A597BE700474AB0 /* HTTPClient.swift in Sources */,
+				AFF31A152A5BD2AB00CC64DD /* MapVCRouter.swift in Sources */,
 				AF3EDFB82A56EF1700474AB0 /* SceneDelegate.swift in Sources */,
 				AF3EDFF02A56F5A900474AB0 /* MapViewController.swift in Sources */,
 				AF3EE00B2A597D7000474AB0 /* Station.swift in Sources */,
