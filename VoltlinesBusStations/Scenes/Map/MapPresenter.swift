@@ -20,11 +20,14 @@ class MapPresenter {
     var service: StationsServiceable = StationsService()
     var stations = [Station]()
     var selectedStation: Station?
+    let router: MapVCRouter
 
     init(
-        delegate: MapPresenterDelegate
+        delegate: MapPresenterDelegate?,
+        router: MapVCRouter
     ) {
         self.delegate = delegate
+        self.router = router
     }
 
     func viewDidLoad() {
@@ -48,5 +51,10 @@ class MapPresenter {
             let result = await service.getStations()
             completionHanlder(result)
         }
+    }
+    
+    func navigateToTripList(station: Station) {
+        guard let delegate = delegate else { return }
+        router.navigateToListTripScreen(from: delegate, station: station)
     }
 }
