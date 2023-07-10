@@ -267,6 +267,7 @@
 			children = (
 				AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */,
 				AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */,
+				AFF31A182A5BD81700CC64DD /* TripsPresenter.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -427,8 +428,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF3EE00D2A597D7A00474AB0 /* Trip.swift in Sources */,
+				AFF31A192A5BD81700CC64DD /* TripsPresenter.swift in Sources */,
 				AFF31A072A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift in Sources */,
 				AFF31A052A5B749C00CC64DD /* MapPresenter.swift in Sources */,
+				AFF31A172A5BD39B00CC64DD /* TripsVCRouter.swift in Sources */,
 				AF3EE0092A597C4E00474AB0 /* StationsService.swift in Sources */,
 				AF3EE0052A597C0A00474AB0 /* RequestError.swift in Sources */,
 				AF3EDFE72A56F47A00474AB0 /* Coordinator.swift in Sources */,
