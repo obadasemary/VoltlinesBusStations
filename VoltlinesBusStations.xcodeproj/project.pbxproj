@@ -27,6 +27,7 @@
 		AF3EE00B2A597D7000474AB0 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE00A2A597D7000474AB0 /* Station.swift */; };
 		AF3EE00D2A597D7A00474AB0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE00C2A597D7A00474AB0 /* Trip.swift */; };
 		AF3EE00F2A59A61700474AB0 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE00E2A59A61700474AB0 /* MapViewModel.swift */; };
+		AFF31A052A5B749C00CC64DD /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A042A5B749C00CC64DD /* MapPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		AF3EE00A2A597D7000474AB0 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		AF3EE00C2A597D7A00474AB0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		AF3EE00E2A59A61700474AB0 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		AFF31A042A5B749C00CC64DD /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */,
 				AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */,
 				AF3EE00E2A59A61700474AB0 /* MapViewModel.swift */,
+				AFF31A042A5B749C00CC64DD /* MapPresenter.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -379,7 +382,7 @@
 		AF3EDFF22A58601700474AB0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -391,7 +394,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
@@ -403,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF3EE00D2A597D7A00474AB0 /* Trip.swift in Sources */,
+				AFF31A052A5B749C00CC64DD /* MapPresenter.swift in Sources */,
 				AF3EE0092A597C4E00474AB0 /* StationsService.swift in Sources */,
 				AF3EE0052A597C0A00474AB0 /* RequestError.swift in Sources */,
 				AF3EDFE72A56F47A00474AB0 /* Coordinator.swift in Sources */,
