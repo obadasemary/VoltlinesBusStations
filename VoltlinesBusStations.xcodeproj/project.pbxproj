@@ -30,6 +30,8 @@
 		AFF31A072A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A062A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift */; };
 		AFF31A0B2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0A2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift */; };
 		AFF31A0D2A5B883700CC64DD /* MapVC+MKMapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0C2A5B883700CC64DD /* MapVC+MKMapViewDelegate.swift */; };
+		AFF31A112A5B8BC600CC64DD /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */; };
+		AFF31A122A5B8BC600CC64DD /* TripsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		AFF31A062A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapPresenterDelegate.swift"; sourceTree = "<group>"; };
 		AFF31A0A2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
 		AFF31A0C2A5B883700CC64DD /* MapVC+MKMapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MKMapViewDelegate.swift"; sourceTree = "<group>"; };
+		AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				AF3EDFED2A56F58B00474AB0 /* Map */,
+				AFF31A0E2A5B8B7A00CC64DD /* Trips */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -255,6 +260,15 @@
 				AF3EE00C2A597D7A00474AB0 /* Trip.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AFF31A0E2A5B8B7A00CC64DD /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */,
+				AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */,
+			);
+			path = Trips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF3EDFC22A56EF1C00474AB0 /* LaunchScreen.storyboard in Resources */,
+				AFF31A122A5B8BC600CC64DD /* TripsViewController.xib in Resources */,
 				AF3EDFF12A56F5A900474AB0 /* MapViewController.xib in Resources */,
 				AF3EDFBF2A56EF1C00474AB0 /* Assets.xcassets in Resources */,
 			);
@@ -388,7 +403,7 @@
 		AF3EDFF22A58601700474AB0 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
-			buildActionMask = 12;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -400,7 +415,7 @@
 			);
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
@@ -421,6 +436,7 @@
 				AF3EDFB62A56EF1700474AB0 /* AppDelegate.swift in Sources */,
 				AFF31A0B2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift in Sources */,
 				AF3EE0032A597BF900474AB0 /* HTTPMethod.swift in Sources */,
+				AFF31A112A5B8BC600CC64DD /* TripsViewController.swift in Sources */,
 				AF3EE0012A597BE700474AB0 /* HTTPClient.swift in Sources */,
 				AF3EDFB82A56EF1700474AB0 /* SceneDelegate.swift in Sources */,
 				AF3EDFF02A56F5A900474AB0 /* MapViewController.swift in Sources */,
