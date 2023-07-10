@@ -22,9 +22,7 @@ class MainCoordinator: Coordinator {
     }
 
     func setRootViewController() {
-//        let viewModel = TrendingRepoViewModel()
         let mapViewController = MapViewController()
-//        viewModel.coordinator = self
         self.navigationController.pushViewController(mapViewController, animated: false)
     }
 }
