@@ -14,7 +14,6 @@
 		AF3EDFCD2A56EF1D00474AB0 /* VoltlinesBusStationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFCC2A56EF1D00474AB0 /* VoltlinesBusStationsTests.swift */; };
 		AF3EDFD72A56EF1D00474AB0 /* VoltlinesBusStationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFD62A56EF1D00474AB0 /* VoltlinesBusStationsUITests.swift */; };
 		AF3EDFD92A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFD82A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift */; };
-		AF3EDFE72A56F47A00474AB0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFE62A56F47A00474AB0 /* Coordinator.swift */; };
 		AF3EDFF02A56F5A900474AB0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */; };
 		AF3EDFF12A56F5A900474AB0 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */; };
 		AF3EDFF72A5861B800474AB0 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFF62A5861B700474AB0 /* CoordinatorTests.swift */; };
@@ -63,7 +62,6 @@
 		AF3EDFD22A56EF1D00474AB0 /* VoltlinesBusStationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltlinesBusStationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF3EDFD62A56EF1D00474AB0 /* VoltlinesBusStationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltlinesBusStationsUITests.swift; sourceTree = "<group>"; };
 		AF3EDFD82A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltlinesBusStationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AF3EDFE62A56F47A00474AB0 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		AF3EDFF62A5861B700474AB0 /* CoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				AF3EDFE82A56F49000474AB0 /* App Delegate */,
-				AF3EDFE52A56F46300474AB0 /* App Coordinatior */,
 				AF3EDFF82A597B8200474AB0 /* Network */,
 				AF3EDFFD2A597BBF00474AB0 /* Models */,
 				AF3EDFEA2A56F55F00474AB0 /* Scenes */,
@@ -158,14 +155,6 @@
 				AF3EDFD82A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift */,
 			);
 			path = VoltlinesBusStationsUITests;
-			sourceTree = "<group>";
-		};
-		AF3EDFE52A56F46300474AB0 /* App Coordinatior */ = {
-			isa = PBXGroup;
-			children = (
-				AF3EDFE62A56F47A00474AB0 /* Coordinator.swift */,
-			);
-			path = "App Coordinatior";
 			sourceTree = "<group>";
 		};
 		AF3EDFE82A56F49000474AB0 /* App Delegate */ = {
@@ -434,7 +423,6 @@
 				AFF31A172A5BD39B00CC64DD /* TripsVCRouter.swift in Sources */,
 				AF3EE0092A597C4E00474AB0 /* StationsService.swift in Sources */,
 				AF3EE0052A597C0A00474AB0 /* RequestError.swift in Sources */,
-				AF3EDFE72A56F47A00474AB0 /* Coordinator.swift in Sources */,
 				AFF31A0D2A5B883700CC64DD /* MapVC+MKMapViewDelegate.swift in Sources */,
 				AF3EDFB62A56EF1700474AB0 /* AppDelegate.swift in Sources */,
 				AFF31A0B2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift in Sources */,
