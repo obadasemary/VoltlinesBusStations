@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="VoltlinesBusStations" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="OYy-kF-Zwu" id="DtC-Cn-TBI"/>
+                <outlet property="listTripsButton" destination="G2p-Ju-V3f" id="Q7V-w1-CaM"/>
                 <outlet property="mapView" destination="nIn-DD-cKb" id="Evs-Me-LxJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,13 +30,27 @@
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="OYy-kF-Zwu">
                     <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
                 </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2p-Ju-V3f">
+                    <rect key="frame" x="20" y="768" width="353" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="WgQ-fz-wUo"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="didTapListTrips:" destination="-1" eventType="touchUpInside" id="FNs-x4-6gb"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="nIn-DD-cKb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7Ho-gz-GgJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="G2p-Ju-V3f" secondAttribute="trailing" constant="20" id="HEi-P8-ZCL"/>
+                <constraint firstItem="G2p-Ju-V3f" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="OpK-jY-n19"/>
                 <constraint firstItem="OYy-kF-Zwu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OsD-cs-0SI"/>
                 <constraint firstItem="OYy-kF-Zwu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RCh-uS-X3f"/>
+                <constraint firstItem="G2p-Ju-V3f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Sc0-kf-Iea"/>
                 <constraint firstItem="nIn-DD-cKb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZoW-H7-JUG"/>
                 <constraint firstAttribute="bottom" secondItem="nIn-DD-cKb" secondAttribute="bottom" id="ax7-oq-5W0"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nIn-DD-cKb" secondAttribute="trailing" id="dHy-vi-SQi"/>
