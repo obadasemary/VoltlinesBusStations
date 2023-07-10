@@ -19,6 +19,7 @@ class MapPresenter {
     private weak var delegate: MapPresenterDelegate?
     var service: StationsServiceable = StationsService()
     var stations = [Station]()
+    var selectedStation: Station?
 
     init(
         delegate: MapPresenterDelegate
