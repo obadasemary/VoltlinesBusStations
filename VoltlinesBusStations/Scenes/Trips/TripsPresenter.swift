@@ -21,6 +21,7 @@ protocol TripsCellDelegate {
 class TripsPresenter {
 
     private weak var delegate: TripsPresenterDelegate?
+    var service: StationsServiceable = StationsService()
     var station: Station?
 
     init(delegate: TripsPresenterDelegate, station: Station) {
@@ -47,6 +48,30 @@ class TripsPresenter {
         cell.didBookTrip = { [unowned self] in
             let trip = station?.trips?[index]
             print(trip)
+            let stationId = String(station?.id ?? 0)
+            let tripId = String(trip?.id ?? 0)
+
+            self.bookTrip(staionId: stationId, tripId: tripId) { [weak self] result in
+
+                guard let self = self else { return }
+                switch result {
+                case .success(let response):
+                    print("response", response)
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }
+
+    func bookTrip(
+        staionId: String,
+        tripId: String,
+        completionHanlder: @escaping (Result<Trip, RequestError>) -> Void
+    ) {
+        Task(priority: .background) {
+            let result = await service.bookTrip(stationId: staionId, tripId: tripId)
+            completionHanlder(result)
         }
     }
 }
