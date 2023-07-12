@@ -9,6 +9,7 @@ import Foundation
 
 enum StationsEndpoint {
     case stations
+    case bookTrip(stationId: String, tripId: String)
 }
 
 extension StationsEndpoint: Endpoint {
@@ -17,6 +18,8 @@ extension StationsEndpoint: Endpoint {
         switch self {
         case .stations:
             return "/case-study/6/stations"
+        case .bookTrip(let stationId, let tripId):
+            return "/case-study/6/stations/\(stationId)/trips/\(tripId)"
         }
     }
 
@@ -24,12 +27,14 @@ extension StationsEndpoint: Endpoint {
         switch self {
         case .stations:
             return .get
+        case .bookTrip:
+            return .post
         }
     }
 
     var header: [String: String]? {
         switch self {
-        case .stations:
+        case .stations, .bookTrip:
             return [
                 "Content-Type": "application/json;charset=utf-8"
             ]
@@ -38,7 +43,7 @@ extension StationsEndpoint: Endpoint {
 
     var body: [String: String]? {
         switch self {
-        case .stations:
+        case .stations,.bookTrip:
             return nil
         }
     }
