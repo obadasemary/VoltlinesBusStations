@@ -34,6 +34,8 @@
 		AFF31A152A5BD2AB00CC64DD /* MapVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A142A5BD2AB00CC64DD /* MapVCRouter.swift */; };
 		AFF31A172A5BD39B00CC64DD /* TripsVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A162A5BD39B00CC64DD /* TripsVCRouter.swift */; };
 		AFF31A192A5BD81700CC64DD /* TripsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A182A5BD81700CC64DD /* TripsPresenter.swift */; };
+		AFF31A1D2A5D65B700CC64DD /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A1B2A5D65B700CC64DD /* TripsTableViewCell.swift */; };
+		AFF31A1E2A5D65B700CC64DD /* TripsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFF31A1C2A5D65B700CC64DD /* TripsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		AFF31A142A5BD2AB00CC64DD /* MapVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVCRouter.swift; sourceTree = "<group>"; };
 		AFF31A162A5BD39B00CC64DD /* TripsVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsVCRouter.swift; sourceTree = "<group>"; };
 		AFF31A182A5BD81700CC64DD /* TripsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsPresenter.swift; sourceTree = "<group>"; };
+		AFF31A1B2A5D65B700CC64DD /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		AFF31A1C2A5D65B700CC64DD /* TripsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +268,7 @@
 				AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */,
 				AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */,
 				AFF31A182A5BD81700CC64DD /* TripsPresenter.swift */,
+				AFF31A1A2A5D658100CC64DD /* TableViewCell */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -275,6 +280,15 @@
 				AFF31A162A5BD39B00CC64DD /* TripsVCRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		AFF31A1A2A5D658100CC64DD /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AFF31A1B2A5D65B700CC64DD /* TripsTableViewCell.swift */,
+				AFF31A1C2A5D65B700CC64DD /* TripsTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +399,7 @@
 				AF3EDFC22A56EF1C00474AB0 /* LaunchScreen.storyboard in Resources */,
 				AFF31A122A5B8BC600CC64DD /* TripsViewController.xib in Resources */,
 				AF3EDFF12A56F5A900474AB0 /* MapViewController.xib in Resources */,
+				AFF31A1E2A5D65B700CC64DD /* TripsTableViewCell.xib in Resources */,
 				AF3EDFBF2A56EF1C00474AB0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +451,7 @@
 				AFF31A192A5BD81700CC64DD /* TripsPresenter.swift in Sources */,
 				AFF31A072A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift in Sources */,
 				AFF31A052A5B749C00CC64DD /* MapPresenter.swift in Sources */,
+				AFF31A1D2A5D65B700CC64DD /* TripsTableViewCell.swift in Sources */,
 				AFF31A172A5BD39B00CC64DD /* TripsVCRouter.swift in Sources */,
 				AF3EE0092A597C4E00474AB0 /* StationsService.swift in Sources */,
 				AF3EE0052A597C0A00474AB0 /* RequestError.swift in Sources */,
