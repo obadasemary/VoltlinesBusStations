@@ -9,15 +9,44 @@ import UIKit
 
 class TripsTableViewCell: UITableViewCell {
 
+    static let identifier = "TripsTableViewCell"
+
+    @IBOutlet weak var stationNameLabel: UILabel!
+    @IBOutlet weak var stationTimeLabel: UILabel!
+    @IBOutlet weak var bookTripsButton: UIButton!
+
+    var didBookTrip: (() -> ())?
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
+        setupUI()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setupUI() {
+        stationNameLabel.textColor = .label
+        stationNameLabel.font = .systemFont(ofSize: 20)
+        stationTimeLabel.textColor = .label
+        stationTimeLabel.font = .systemFont(ofSize: 20)
+        bookTripsButton.setTitle("Book", for: .normal)
+        bookTripsButton.setTitleColor(.white, for: .normal)
+        bookTripsButton.backgroundColor = .blue
+        bookTripsButton.layer.cornerRadius = 20
+        bookTripsButton.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
     }
-    
+
+    @IBAction func didTapBookTrip(_ sender: Any) {
+        didBookTrip?()
+    }
+}
+
+extension TripsTableViewCell: TripsCellDelegate {
+
+    func displayBusName(value: String) {
+        stationNameLabel.text = value
+    }
+
+    func displayBusTime(value: String) {
+        stationTimeLabel.text = value
+    }
 }
