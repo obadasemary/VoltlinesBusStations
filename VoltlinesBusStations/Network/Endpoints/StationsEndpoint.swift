@@ -43,7 +43,7 @@ extension StationsEndpoint: Endpoint {
 
     var body: [String: String]? {
         switch self {
-        case .stations,.bookTrip:
+        case .stations, .bookTrip:
             return nil
         }
     }

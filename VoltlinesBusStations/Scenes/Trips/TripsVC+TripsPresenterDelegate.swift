@@ -21,7 +21,6 @@ extension TripsViewController: TripsPresenterDelegate {
     }
 
     func showsuccessBooking() {
-
         DispatchQueue.main.async {
             self.showAlert(alertType: .success)
         }

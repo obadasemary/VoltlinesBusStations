@@ -52,7 +52,7 @@ class MapPresenter {
             completionHanlder(result)
         }
     }
-    
+
     func navigateToTripList(station: Station) {
         guard let delegate = delegate else { return }
         router.navigateToListTripScreen(from: delegate, station: station)

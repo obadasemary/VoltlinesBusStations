@@ -54,9 +54,9 @@ class MapViewController: UIViewController {
         mapView.isScrollEnabled = true
         mapView.delegate = self
     }
-    
+
     func setupListTripsButton() {
-        
+
         listTripsButton.setTitle("List Trips", for: .normal)
         listTripsButton.setTitleColor(.white, for: .normal)
         listTripsButton.backgroundColor = .blue
@@ -108,7 +108,7 @@ class MapViewController: UIViewController {
             print("Unkonwn error. Unable to get location.")
         }
     }
-    
+
     @IBAction func didTapListTrips(_ sender: Any) {
         guard let station = presenter?.selectedStation else { return }
         presenter?.navigateToTripList(station: station)

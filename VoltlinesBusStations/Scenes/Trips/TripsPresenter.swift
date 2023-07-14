@@ -17,7 +17,7 @@ protocol TripsPresenterDelegate: AnyObject {
     func presentTrips(with trips: [Trip])
 }
 
-protocol TripsCellDelegate {
+protocol TripsCellDelegate: AnyObject {
     func displayBusName(value: String)
     func displayBusTime(value: String)
 }

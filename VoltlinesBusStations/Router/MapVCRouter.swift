@@ -18,12 +18,12 @@ class MapVCRouter {
         let navigationController = UINavigationController(rootViewController: mapVC)
         return navigationController
     }
-    
+
     func navigateToListTripScreen(from view: MapPresenterDelegate, station: Station) {
-        
+
         let tripsView = TripsVCRouter.createTripsVC(station: station)
-        if let vc = view as? UIViewController {
-            vc.navigationController?.pushViewController(tripsView, animated: true)
+        if let tripsVC = view as? UIViewController {
+            tripsVC.navigationController?.pushViewController(tripsView, animated: true)
         }
     }
 }

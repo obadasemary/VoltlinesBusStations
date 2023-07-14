@@ -9,17 +9,17 @@ import Foundation
 import MapKit
 
 extension MapViewController: MKMapViewDelegate {
-    
+
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
+
         let identifier = "pin"
-        
+
         if annotation is MKUserLocation {
             return nil
         }
-        
+
         annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        
+
         if annotationView == nil {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             annotationView.canShowCallout = true
@@ -27,12 +27,12 @@ extension MapViewController: MKMapViewDelegate {
         } else {
             annotationView.annotation =  annotation
         }
-        
+
         return annotationView
     }
-    
+
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        
+
         /* I assumed the name is unique and will not be repeated otherwise I have another solution
          you can find in my stashes also for reference here are my answers 6 years ago :D
          https://stackoverflow.com/a/51240901/3716103 On my Question https://stackoverflow.com/q/42144195/3716103
@@ -43,15 +43,15 @@ extension MapViewController: MKMapViewDelegate {
                 presenter?.selectedStation = station
             }
         }
-        
+
         if view.isSelected {
             listTripsButton.isHidden = false
             view.image = UIImage(named: "SelectedPoint")
         }
     }
-    
+
     func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
-        
+
         listTripsButton.isHidden = true
         view.image = UIImage(named: "Point")
     }

@@ -18,7 +18,7 @@ class TripsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+
     var presenter: TripsPresenter?
 
     lazy var dataSource: TableDataSource = {
@@ -75,7 +75,6 @@ class TripsViewController: UIViewController {
             customAlert.alertMessage = "Please select another one."
             customAlert.actionButtonTitle = "Select a trip"
         }
-
 
         customAlert.show()
     }

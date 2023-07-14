@@ -8,9 +8,9 @@
 import UIKit
 
 class TripsVCRouter {
-    
+
     class func createTripsVC(station: Station) -> UIViewController {
-        
+
         let tripsVC = TripsViewController()
         let router = TripsVCRouter()
         let presenter = TripsPresenter(delegate: tripsVC, router: router, station: station)
@@ -22,4 +22,3 @@ class TripsVCRouter {
         view.navigationController?.popViewController(animated: true)
     }
 }
-
