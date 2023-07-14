@@ -26,8 +26,13 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:VoltlinesBusStations.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
@@ -37,17 +42,6 @@
                BlueprintIdentifier = "AF3EDFC72A56EF1D00474AB0"
                BuildableName = "VoltlinesBusStationsTests.xctest"
                BlueprintName = "VoltlinesBusStationsTests"
-               ReferencedContainer = "container:VoltlinesBusStations.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AF3EDFD12A56EF1D00474AB0"
-               BuildableName = "VoltlinesBusStationsUITests.xctest"
-               BlueprintName = "VoltlinesBusStationsUITests"
                ReferencedContainer = "container:VoltlinesBusStations.xcodeproj">
             </BuildableReference>
          </TestableReference>
