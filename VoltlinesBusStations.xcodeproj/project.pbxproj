@@ -16,7 +16,6 @@
 		AF3EDFD92A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFD82A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift */; };
 		AF3EDFF02A56F5A900474AB0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */; };
 		AF3EDFF12A56F5A900474AB0 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */; };
-		AF3EDFF72A5861B800474AB0 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFF62A5861B700474AB0 /* CoordinatorTests.swift */; };
 		AF3EDFFF2A597BD700474AB0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EDFFE2A597BD600474AB0 /* Endpoint.swift */; };
 		AF3EE0012A597BE700474AB0 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE0002A597BE700474AB0 /* HTTPClient.swift */; };
 		AF3EE0032A597BF900474AB0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE0022A597BF900474AB0 /* HTTPMethod.swift */; };
@@ -28,6 +27,10 @@
 		AF5631EA2A614221007C70A2 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5631E82A614221007C70A2 /* CustomAlertViewController.swift */; };
 		AF5631EB2A614221007C70A2 /* CustomAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5631E92A614221007C70A2 /* CustomAlertViewController.xib */; };
 		AF5631F72A618482007C70A2 /* TripsVC+TripsPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5631F62A618482007C70A2 /* TripsVC+TripsPresenterDelegate.swift */; };
+		AF5631FA2A618D5B007C70A2 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5631F92A618D5B007C70A2 /* Mockable.swift */; };
+		AF5631FD2A618EC5007C70A2 /* stations_response.json in Resources */ = {isa = PBXBuildFile; fileRef = AF5631FC2A618EC5007C70A2 /* stations_response.json */; };
+		AF5631FF2A618F09007C70A2 /* NetwokTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5631FE2A618F09007C70A2 /* NetwokTest.swift */; };
+		AF5632012A619408007C70A2 /* trip_response.json in Resources */ = {isa = PBXBuildFile; fileRef = AF5632002A619173007C70A2 /* trip_response.json */; };
 		AFF31A052A5B749C00CC64DD /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A042A5B749C00CC64DD /* MapPresenter.swift */; };
 		AFF31A072A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A062A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift */; };
 		AFF31A0B2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0A2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift */; };
@@ -72,7 +75,6 @@
 		AF3EDFD82A56EF1D00474AB0 /* VoltlinesBusStationsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltlinesBusStationsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AF3EDFEE2A56F5A900474AB0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AF3EDFEF2A56F5A900474AB0 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
-		AF3EDFF62A5861B700474AB0 /* CoordinatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
 		AF3EDFFE2A597BD600474AB0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		AF3EE0002A597BE700474AB0 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		AF3EE0022A597BF900474AB0 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -84,6 +86,10 @@
 		AF5631E82A614221007C70A2 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		AF5631E92A614221007C70A2 /* CustomAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertViewController.xib; sourceTree = "<group>"; };
 		AF5631F62A618482007C70A2 /* TripsVC+TripsPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripsVC+TripsPresenterDelegate.swift"; sourceTree = "<group>"; };
+		AF5631F92A618D5B007C70A2 /* Mockable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		AF5631FC2A618EC5007C70A2 /* stations_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stations_response.json; sourceTree = "<group>"; };
+		AF5631FE2A618F09007C70A2 /* NetwokTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokTest.swift; sourceTree = "<group>"; };
+		AF5632002A619173007C70A2 /* trip_response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trip_response.json; sourceTree = "<group>"; };
 		AFF31A042A5B749C00CC64DD /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		AFF31A062A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapPresenterDelegate.swift"; sourceTree = "<group>"; };
 		AFF31A0A2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
@@ -159,7 +165,7 @@
 		AF3EDFCB2A56EF1D00474AB0 /* VoltlinesBusStationsTests */ = {
 			isa = PBXGroup;
 			children = (
-				AF3EDFF52A5861B700474AB0 /* Coordinator Tests */,
+				AF5631F82A618D3F007C70A2 /* Network Tests */,
 				AF3EDFCC2A56EF1D00474AB0 /* VoltlinesBusStationsTests.swift */,
 			);
 			path = VoltlinesBusStationsTests;
@@ -215,14 +221,6 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
-		AF3EDFF52A5861B700474AB0 /* Coordinator Tests */ = {
-			isa = PBXGroup;
-			children = (
-				AF3EDFF62A5861B700474AB0 /* CoordinatorTests.swift */,
-			);
-			path = "Coordinator Tests";
-			sourceTree = "<group>";
-		};
 		AF3EDFF82A597B8200474AB0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +274,25 @@
 				AF5631E92A614221007C70A2 /* CustomAlertViewController.xib */,
 			);
 			path = CustomAlertView;
+			sourceTree = "<group>";
+		};
+		AF5631F82A618D3F007C70A2 /* Network Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AF5631FB2A618E77007C70A2 /* JSON */,
+				AF5631F92A618D5B007C70A2 /* Mockable.swift */,
+				AF5631FE2A618F09007C70A2 /* NetwokTest.swift */,
+			);
+			path = "Network Tests";
+			sourceTree = "<group>";
+		};
+		AF5631FB2A618E77007C70A2 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				AF5631FC2A618EC5007C70A2 /* stations_response.json */,
+				AF5632002A619173007C70A2 /* trip_response.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		AFF31A0E2A5B8B7A00CC64DD /* Trips */ = {
@@ -426,6 +443,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5631FD2A618EC5007C70A2 /* stations_response.json in Resources */,
+				AF5632012A619408007C70A2 /* trip_response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,8 +513,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3EDFF72A5861B800474AB0 /* CoordinatorTests.swift in Sources */,
+				AF5631FA2A618D5B007C70A2 /* Mockable.swift in Sources */,
 				AF3EDFCD2A56EF1D00474AB0 /* VoltlinesBusStationsTests.swift in Sources */,
+				AF5631FF2A618F09007C70A2 /* NetwokTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

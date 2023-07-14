@@ -13,6 +13,7 @@ protocol StationsServiceable {
 }
 
 struct StationsService: HTTPClient, StationsServiceable {
+
     func getStations() async -> Result<[Station], RequestError> {
         return await sendRequest(endpoint: StationsEndpoint.stations, responseModel: [Station].self)
     }

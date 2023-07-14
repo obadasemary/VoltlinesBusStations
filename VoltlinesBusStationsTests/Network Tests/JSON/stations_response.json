@@ -1,0 +1,406 @@
+[
+    {
+        "center_coordinates": "41.09297645004368,29.003123581510543",
+        "id": 400,
+        "name": "ST-400",
+        "trips": [
+            {
+                "bus_name": "UK-20",
+                "id": 40010,
+                "time": "8:01 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 4009,
+                "time": "8:05 AM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 40013,
+                "time": "8:06 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 40014,
+                "time": "8:10 AM"
+            }
+        ],
+        "trips_count": 4
+    },
+    {
+        "center_coordinates": "40.98496675,29.101067799999996",
+        "id": 1,
+        "name": "ST-1",
+        "trips": [
+            {
+                "bus_name": "UK-20",
+                "id": 210,
+                "time": "8:21 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 214,
+                "time": "8:30 AM"
+            }
+        ],
+        "trips_count": 2
+    },
+    {
+        "center_coordinates": "41.11226814001678,29.020181739732397",
+        "id": 12,
+        "name": "ST-12",
+        "trips": [
+            {
+                "bus_name": "UK-20",
+                "id": 1210,
+                "time": "8:01 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 129,
+                "time": "8:05 AM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 1213,
+                "time": "8:06 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 1214,
+                "time": "8:10 AM"
+            },
+            {
+                "bus_name": "UK-20",
+                "id": 1215,
+                "time": "8:31 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 1292,
+                "time": "8:35 AM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 1216,
+                "time": "8:36 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 1217,
+                "time": "8:40 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 1218,
+                "time": "9:10 AM"
+            }
+        ],
+        "trips_count": 9
+    },
+    {
+        "center_coordinates": "41.03794357526146,28.932216415012356",
+        "id": 3,
+        "name": "ST-3",
+        "trips": [
+            {
+                "bus_name": "UK-20",
+                "id": 310,
+                "time": "10:01 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 39,
+                "time": "10:05 AM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 313,
+                "time": "10:06 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 314,
+                "time": "10:10 AM"
+            },
+            {
+                "bus_name": "UK-20",
+                "id": 315,
+                "time": "10:31 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 392,
+                "time": "10:35 AM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 316,
+                "time": "10:36 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 317,
+                "time": "10:40 AM"
+            }
+        ],
+        "trips_count": 8
+    },
+    {
+        "center_coordinates": "41.08285409362342,28.982555132610337",
+        "id": 164,
+        "name": "ST-164",
+        "trips": [
+            {
+                "bus_name": "M-12",
+                "id": 16413,
+                "time": "11:46 AM"
+            }
+        ],
+        "trips_count": 1
+    },
+    {
+        "center_coordinates": "41.078249472861295,29.010308975987996",
+        "id": 41,
+        "name": "ST-41",
+        "trips": [
+            {
+                "bus_name": "BK-10",
+                "id": 4113,
+                "time": "11:06 AM"
+            },
+            {
+                "bus_name": "M-5",
+                "id": 4114,
+                "time": "11:10 AM"
+            }
+        ],
+        "trips_count": 2
+    },
+    {
+        "center_coordinates": "41.08276569688989,29.012459412124876",
+        "id": 48,
+        "name": "ST-48",
+        "trips": [
+            {
+                "bus_name": "UK-20",
+                "id": 4810,
+                "time": "10:01 PM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 489,
+                "time": "10:05 PM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 4813,
+                "time": "10:06 PM"
+            }
+        ],
+        "trips_count": 3
+    },
+    {
+        "center_coordinates": "41.0584423,29.0072242",
+        "id": 478,
+        "name": "ST-478",
+        "trips": [
+            {
+                "bus_name": "BK-10",
+                "id": 47813,
+                "time": "1:06 PM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 47814,
+                "time": "1:13 PM"
+            },
+            {
+                "bus_name": "UK-20",
+                "id": 47815,
+                "time": "1:31 PM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 47892,
+                "time": "1:35 PM"
+            }
+        ],
+        "trips_count": 4
+    },
+    {
+        "center_coordinates": "41.003591781369686,29.072157502045435",
+        "id": 200,
+        "name": "ST-200",
+        "trips": [
+            {
+                "bus_name": "UK-20",
+                "id": 20010,
+                "time": "7:01 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 2009,
+                "time": "7:05 AM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 20013,
+                "time": "8:06 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 20014,
+                "time": "8:10 AM"
+            },
+            {
+                "bus_name": "UK-20",
+                "id": 20015,
+                "time": "8:31 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 20092,
+                "time": "9:35 AM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 20016,
+                "time": "9:36 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 20017,
+                "time": "10:40 AM"
+            },
+            {
+                "bus_name": "M-20",
+                "id": 20025,
+                "time": "11:31 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 20093,
+                "time": "11:35 AM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 20018,
+                "time": "1:10 PM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 20013,
+                "time": "4:06 PM"
+            },
+            {
+                "bus_name": "M-5",
+                "id": 20024,
+                "time": "4:10 PM"
+            },
+            {
+                "bus_name": "UK-20",
+                "id": 20019,
+                "time": "4:31 PM"
+            }
+        ],
+        "trips_count": 14
+    },
+    {
+        "center_coordinates": "41.017638310892316,29.054586642852787",
+        "id": 233,
+        "name": "ST-233",
+        "trips": [
+            {
+                "bus_name": "T-20",
+                "id": 23319,
+                "time": "4:31 PM"
+            }
+        ],
+        "trips_count": 1
+    },
+    {
+        "center_coordinates": "41.00036797847233,29.181898129515297",
+        "id": 407,
+        "name": "ST-407",
+        "trips": [
+            {
+                "bus_name": "UK-120",
+                "id": 40710,
+                "time": "7:01 PM"
+            },
+            {
+                "bus_name": "KB-15",
+                "id": 4079,
+                "time": "7:05 PM"
+            },
+            {
+                "bus_name": "BK-110",
+                "id": 40713,
+                "time": "8:06 PM"
+            },
+            {
+                "bus_name": "KB-15",
+                "id": 40714,
+                "time": "8:10 PM"
+            },
+            {
+                "bus_name": "UK-120",
+                "id": 40715,
+                "time": "8:31 PM"
+            }
+        ],
+        "trips_count": 5
+    },
+    {
+        "center_coordinates": "41.0697176,29.0022162",
+        "id": 484,
+        "name": "ST-484",
+        "trips": [
+            {
+                "bus_name": "KB-5",
+                "id": 48414,
+                "time": "8:10 PM"
+            },
+            {
+                "bus_name": "UK-20",
+                "id": 48415,
+                "time": "8:31 PM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 48492,
+                "time": "9:35 PM"
+            },
+            {
+                "bus_name": "BK-10",
+                "id": 48416,
+                "time": "9:36 PM"
+            },
+            {
+                "bus_name": "KB-5",
+                "id": 48417,
+                "time": "10:40 PM"
+            },
+            {
+                "bus_name": "M-20",
+                "id": 48425,
+                "time": "11:31 PM"
+            }
+        ],
+        "trips_count": 6
+    },
+    {
+        "center_coordinates": "41.6770114,26.5503394",
+        "id": 511,
+        "name": "ST-511",
+        "trips": [
+            {
+                "bus_name": "UK-120",
+                "id": 51115,
+                "time": "6:31 PM"
+            }
+        ],
+        "trips_count": 1
+    }
+]
