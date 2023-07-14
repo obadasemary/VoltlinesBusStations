@@ -33,7 +33,7 @@ extension TripsViewController: TripsPresenterDelegate {
         }
     }
 
-    func presentStations(trips: [Trip]) {
+    func presentTrips(with trips: [Trip]) {
         updateSnapShot(trips: trips)
     }
 }
