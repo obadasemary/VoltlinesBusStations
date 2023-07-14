@@ -25,6 +25,8 @@
 		AF3EE0092A597C4E00474AB0 /* StationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE0082A597C4E00474AB0 /* StationsService.swift */; };
 		AF3EE00B2A597D7000474AB0 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE00A2A597D7000474AB0 /* Station.swift */; };
 		AF3EE00D2A597D7A00474AB0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE00C2A597D7A00474AB0 /* Trip.swift */; };
+		AF5631EA2A614221007C70A2 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5631E82A614221007C70A2 /* CustomAlertViewController.swift */; };
+		AF5631EB2A614221007C70A2 /* CustomAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5631E92A614221007C70A2 /* CustomAlertViewController.xib */; };
 		AFF31A052A5B749C00CC64DD /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A042A5B749C00CC64DD /* MapPresenter.swift */; };
 		AFF31A072A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A062A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift */; };
 		AFF31A0B2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0A2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift */; };
@@ -78,6 +80,8 @@
 		AF3EE0082A597C4E00474AB0 /* StationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsService.swift; sourceTree = "<group>"; };
 		AF3EE00A2A597D7000474AB0 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		AF3EE00C2A597D7A00474AB0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		AF5631E82A614221007C70A2 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		AF5631E92A614221007C70A2 /* CustomAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertViewController.xib; sourceTree = "<group>"; };
 		AFF31A042A5B749C00CC64DD /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		AFF31A062A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapPresenterDelegate.swift"; sourceTree = "<group>"; };
 		AFF31A0A2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 			children = (
 				AF3EDFED2A56F58B00474AB0 /* Map */,
 				AFF31A0E2A5B8B7A00CC64DD /* Trips */,
+				AF5631E72A6140A6007C70A2 /* CustomAlertView */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -260,6 +265,15 @@
 				AF3EE00C2A597D7A00474AB0 /* Trip.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AF5631E72A6140A6007C70A2 /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				AF5631E82A614221007C70A2 /* CustomAlertViewController.swift */,
+				AF5631E92A614221007C70A2 /* CustomAlertViewController.xib */,
+			);
+			path = CustomAlertView;
 			sourceTree = "<group>";
 		};
 		AFF31A0E2A5B8B7A00CC64DD /* Trips */ = {
@@ -400,6 +414,7 @@
 				AFF31A122A5B8BC600CC64DD /* TripsViewController.xib in Resources */,
 				AF3EDFF12A56F5A900474AB0 /* MapViewController.xib in Resources */,
 				AFF31A1E2A5D65B700CC64DD /* TripsTableViewCell.xib in Resources */,
+				AF5631EB2A614221007C70A2 /* CustomAlertViewController.xib in Resources */,
 				AF3EDFBF2A56EF1C00474AB0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +467,7 @@
 				AFF31A072A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift in Sources */,
 				AFF31A052A5B749C00CC64DD /* MapPresenter.swift in Sources */,
 				AFF31A1D2A5D65B700CC64DD /* TripsTableViewCell.swift in Sources */,
+				AF5631EA2A614221007C70A2 /* CustomAlertViewController.swift in Sources */,
 				AFF31A172A5BD39B00CC64DD /* TripsVCRouter.swift in Sources */,
 				AF3EE0092A597C4E00474AB0 /* StationsService.swift in Sources */,
 				AF3EE0052A597C0A00474AB0 /* RequestError.swift in Sources */,
