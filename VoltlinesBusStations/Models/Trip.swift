@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Trip: Codable {
+struct Trip: Hashable, Codable {
+
+    let identifier = UUID()
     let busName: String?
     let id: Int?
     let time: String?
@@ -15,5 +17,13 @@ struct Trip: Codable {
     enum CodingKeys: String, CodingKey {
         case busName = "bus_name"
         case id, time
+    }
+
+    static func == (lhs: Trip, rhs: Trip) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
     }
 }
