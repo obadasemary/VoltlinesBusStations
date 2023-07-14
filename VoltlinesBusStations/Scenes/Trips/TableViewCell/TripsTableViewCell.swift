@@ -15,7 +15,7 @@ class TripsTableViewCell: UITableViewCell {
     @IBOutlet weak var stationTimeLabel: UILabel!
     @IBOutlet weak var bookTripsButton: UIButton!
 
-    var didBookTrip: (() -> ())?
+    var didBookTrip: (() -> Void)?
 
     override func awakeFromNib() {
         super.awakeFromNib()
