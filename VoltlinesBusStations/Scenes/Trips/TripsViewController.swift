@@ -7,12 +7,38 @@
 
 import UIKit
 
+enum Section {
+
+    case trips
+}
+
+typealias TableDataSource = UITableViewDiffableDataSource<Section, Trip>
+
 class TripsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var presenter: TripsPresenter?
+
+    lazy var dataSource: TableDataSource = {
+
+        let dataSource = TableDataSource(
+            tableView: tableView
+        ) { tableView, indexPath, _ in
+
+            guard let cell = tableView.dequeueReusableCell(
+                withIdentifier: TripsTableViewCell.identifier,
+                for: indexPath
+            ) as? TripsTableViewCell else { return UITableViewCell() }
+
+            self.presenter?.configure(cell: cell, for: indexPath.row)
+            self.presenter?.didTap(cell: cell, for: indexPath.row)
+            return cell
+        }
+
+        return dataSource
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,40 +48,44 @@ class TripsViewController: UIViewController {
 
         presenter?.viewDidLoad()
     }
-}
-
-extension TripsViewController: TripsPresenterDelegate {
-
-    func showError(error: String) {
-        print("TripsViewController.Error:", error)
-    }
-
-    func presentStations(station: Station) {
-        tableView.reloadData()
-        print("TripsViewController.station:", station)
-    }
-}
-
-extension TripsViewController: UITableViewDataSource {
 
     func setupTableView() {
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.dataSource = self
         tableView.register(
             UINib(nibName: TripsTableViewCell.identifier, bundle: nil),
             forCellReuseIdentifier: TripsTableViewCell.identifier
         )
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.getTripsCount() ?? 0
+    func showAlert(alertType: AlertType) {
+
+        let customAlert = CustomAlertViewController()
+
+        switch alertType {
+        case .success:
+            customAlert.alertTitle = "Congrats"
+            customAlert.alertMessage = "Trip selected."
+            customAlert.actionButtonTitle = "Done"
+            customAlert.onTap = { [weak self] in
+                guard let self = self else { return }
+                self.presenter?.popView(view: self)
+            }
+        case .failure:
+            customAlert.alertTitle = "The trip you selected is full"
+            customAlert.alertMessage = "Please select another one."
+            customAlert.actionButtonTitle = "Select a trip"
+        }
+
+
+        customAlert.show()
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func updateSnapShot(trips: [Trip]) {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: TripsTableViewCell.identifier, for: indexPath) as! TripsTableViewCell
-        presenter?.configure(cell: cell, for: indexPath.row)
-        presenter?.didTap(cell: cell, for: indexPath.row)
-        return cell
+        var snapShot = NSDiffableDataSourceSnapshot<Section, Trip>()
+        snapShot.appendSections([.trips])
+        snapShot.appendItems(trips)
+
+        dataSource.apply(snapShot)
     }
 }
