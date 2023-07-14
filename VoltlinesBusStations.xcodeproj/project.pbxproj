@@ -27,6 +27,7 @@
 		AF3EE00D2A597D7A00474AB0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF3EE00C2A597D7A00474AB0 /* Trip.swift */; };
 		AF5631EA2A614221007C70A2 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5631E82A614221007C70A2 /* CustomAlertViewController.swift */; };
 		AF5631EB2A614221007C70A2 /* CustomAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5631E92A614221007C70A2 /* CustomAlertViewController.xib */; };
+		AF5631F72A618482007C70A2 /* TripsVC+TripsPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5631F62A618482007C70A2 /* TripsVC+TripsPresenterDelegate.swift */; };
 		AFF31A052A5B749C00CC64DD /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A042A5B749C00CC64DD /* MapPresenter.swift */; };
 		AFF31A072A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A062A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift */; };
 		AFF31A0B2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF31A0A2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift */; };
@@ -82,6 +83,7 @@
 		AF3EE00C2A597D7A00474AB0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		AF5631E82A614221007C70A2 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		AF5631E92A614221007C70A2 /* CustomAlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertViewController.xib; sourceTree = "<group>"; };
+		AF5631F62A618482007C70A2 /* TripsVC+TripsPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripsVC+TripsPresenterDelegate.swift"; sourceTree = "<group>"; };
 		AFF31A042A5B749C00CC64DD /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		AFF31A062A5B86E500CC64DD /* MapVC+MapPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+MapPresenterDelegate.swift"; sourceTree = "<group>"; };
 		AFF31A0A2A5B87F300CC64DD /* MapVC+CLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapVC+CLLocationManagerDelegate.swift"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				AFF31A0F2A5B8BC600CC64DD /* TripsViewController.swift */,
 				AFF31A102A5B8BC600CC64DD /* TripsViewController.xib */,
 				AFF31A182A5BD81700CC64DD /* TripsPresenter.swift */,
+				AF5631F62A618482007C70A2 /* TripsVC+TripsPresenterDelegate.swift */,
 				AFF31A1A2A5D658100CC64DD /* TableViewCell */,
 			);
 			path = Trips;
@@ -482,6 +485,7 @@
 				AF3EDFF02A56F5A900474AB0 /* MapViewController.swift in Sources */,
 				AF3EE00B2A597D7000474AB0 /* Station.swift in Sources */,
 				AF3EDFFF2A597BD700474AB0 /* Endpoint.swift in Sources */,
+				AF5631F72A618482007C70A2 /* TripsVC+TripsPresenterDelegate.swift in Sources */,
 				AF3EE0072A597C3E00474AB0 /* StationsEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
