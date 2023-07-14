@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripsViewController" customModule="VoltlinesBusStations" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="6Le-nj-069" id="MbJ-sp-IR8"/>
                 <outlet property="tableView" destination="KkC-j4-Q6F" id="3SH-c2-zHu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,6 +25,9 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="6Le-nj-069">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -32,6 +36,8 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KkC-j4-Q6F" secondAttribute="trailing" id="XXk-Os-eEb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KkC-j4-Q6F" secondAttribute="bottom" id="YkV-Xc-2JR"/>
                 <constraint firstItem="KkC-j4-Q6F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="caL-QT-oQU"/>
+                <constraint firstItem="6Le-nj-069" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="pID-av-IEh"/>
+                <constraint firstItem="6Le-nj-069" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sXz-FP-EXH"/>
             </constraints>
             <point key="canvasLocation" x="102" y="20"/>
         </view>

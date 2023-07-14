@@ -10,6 +10,7 @@ import UIKit
 class TripsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var presenter: TripsPresenter?
 
