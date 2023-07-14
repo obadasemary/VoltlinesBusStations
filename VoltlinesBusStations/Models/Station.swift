@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias Stations = [Station]
+
 struct Station: Codable {
     let centerCoordinates: String?
     let id: Int?

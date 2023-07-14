@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias Trips = [Trip]
+
 struct Trip: Hashable, Codable {
 
     let identifier = UUID()
